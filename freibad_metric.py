@@ -40,7 +40,7 @@ gauge.set_function(temperature_callback)
 
 def main():
     parser = argparse.ArgumentParser(description="Freibad Arnum Prometheus metrics exporter")
-    parser.add_argument("--host", default="127.0.0.1", help="Host to listen on (default: 127.0.0.1)")
+    parser.add_argument("--host", default="0.0.0.0", help="Host to listen on (default: 0.0.0.0)")
     parser.add_argument("--port", type=int, default=8000, help="Port to listen on (default: 8000)")
     args = parser.parse_args()
 
